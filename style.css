@@ -1,0 +1,54 @@
+body{
+margin:0;
+background:#f2f2f2;
+font-family:Arial, sans-serif;
+}
+
+.face{
+position:relative;
+width:600px;
+margin:50px auto;
+}
+
+.face-img{
+width:100%;
+display:block;
+}
+
+.mole{
+position:absolute;
+}
+
+.mole summary{
+width:10px;
+height:10px;
+background:black;
+border-radius:50%;
+cursor:pointer;
+list-style:none;
+transition:0.2s;
+}
+
+summary::-webkit-details-marker{
+display:none;
+}
+
+.mole summary:hover{
+transform:scale(1.6);
+}
+
+.mole p{
+position:absolute;
+top:15px;
+left:15px;
+width:140px;
+background:white;
+padding:6px;
+font-size:12px;
+border:1px solid black;
+}
+
+.m1 {
+    top: 360px;
+    left: 300px;
+}
