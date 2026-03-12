@@ -1,9 +1,15 @@
+.momo-signature-regular {
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body{
 margin:0;
 height:100vh;
 background:#b30000;
 color:white;
-font-family:Helvetica, Arial, sans-serif;
+font-family: "Momo Signature", cursive;
 
 display:flex;
 justify-content:center;
