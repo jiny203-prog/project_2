@@ -1,9 +1,15 @@
 body {
     margin: 0;
     background: #111;
-    font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
     overflow-x: hidden; 
 }
+
+.momo-signature-regular {
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .good summary {
     background: #ff2a2a; 
@@ -32,14 +38,10 @@ body {
 /* 核心改动：隐形面部对齐框 */
 .face-mask {
     position: absolute;
-    /* 根据你的自拍照估算的脸部边界 */
-    top: 15%;      /* 距离头顶的距离 */
-    left: 20%;     /* 距离左边缘的距离 */
-    width: 60%;    /* 脸部占照片宽度的比例 */
-    height: 75%;   /* 脸部占照片高度的比例 */
-    
-    /* 调试秘籍：把下面这行的 /* 删掉，就能看到红框，方便微调大小！微调好再盖上。 */
-    /* border: 2px solid red; */
+    top: 15%;      
+    left: 20%;     
+    width: 60%;   
+    height: 75%;   
 }
 
 .mole {
@@ -48,8 +50,8 @@ body {
 }
 
 .mole summary {
-    width: 6px; 
-    height: 6px;
+    width: 8px; 
+    height: 8px;
     border-radius: 50%;
     cursor: pointer;
     list-style: none;
@@ -104,7 +106,6 @@ summary::-webkit-details-marker {
     bottom: 15px;
 }
 
-/* 60 个坐标点 (保持原封不动，因为它们现在是在 mask 内部定位的了！) */
 .m1  { top: 20%; left: 34%; }
 .m2  { top: 18%; left: 38%; }
 .m3  { top: 16%; left: 42%; }
@@ -113,7 +114,7 @@ summary::-webkit-details-marker {
 .m6  { top: 14%; left: 54%; }
 .m7  { top: 16%; left: 58%; }
 .m8  { top: 18%; left: 62%; }
-.m9  { top: 22%; left: 58%; }
+.m9  { top: 22%; left: 54%; }
 .m10 { top: 20%; left: 66%; }
 .m11 { top: 22%; left: 70%; }
 .m12 { top: 26%; left: 73%; }
@@ -122,46 +123,133 @@ summary::-webkit-details-marker {
 .m15 { top: 32%; left: 30%; }
 .m16 { top: 33%; left: 44%; }
 .m17 { top: 37%; left: 40%; }
-.m18 { top: 44%; left: 41%; }
-.m19 { top: 48%; left: 40%; }
-.m20 { top: 42%; left: 28%; }
-.m21 { top: 50%; left: 33%; }
+.m18 { top: 37%; left: 35%; }
+.m19 { top: 44%; left: 28%; }
+.m20 { top: 42%; left: 21%; }
+.m21 { top: 45%; left: 25%; }
 .m22 { top: 30%; left: 50%; }
 .m23 { top: 32%; left: 52%; }
 .m24 { top: 36%; left: 50%; }
 .m25 { top: 42%; left: 50%; }
 .m26 { top: 48%; left: 50%; }
-.m27 { top: 57%; left: 50%; }
-.m28 { top: 28%; left: 60%; }
-.m29 { top: 28%; left: 66%; }
-.m30 { top: 33%; left: 62%; }
+.m27 { top: 57%; left: 46%; }
+.m28 { top: 32%; left: 60%; }
+.m29 { top: 30%; left: 66%; }
+.m30 { top: 40%; left: 55%; }
 .m31 { top: 35%; left: 58%; }
-.m32 { top: 34%; left: 68%; }
-.m33 { top: 38%; left: 64%; }
-.m34 { top: 44%; left: 59%; }
-.m35 { top: 40%; left: 66%; }
-.m36 { top: 48%; left: 62%; }
-.m37 { top: 48%; left: 72%; }
-.m38 { top: 50%; left: 44%; }
-.m39 { top: 56%; left: 43%; }
-.m40 { top: 62%; left: 42%; }
-.m41 { top: 72%; left: 41%; }
-.m42 { top: 58%; left: 34%; }
-.m43 { top: 63%; left: 32%; }
-.m44 { top: 68%; left: 33%; }
-.m45 { top: 76%; left: 34%; }
-.m46 { top: 64%; left: 50%; }
+.m32 { top: 35%; left: 66%; }
+.m33 { top: 28%; left: 58%; }
+.m34 { top: 46%; left: 65%; }
+.m35 { top: 44%; left: 70%; }
+.m36 { top: 48%; left: 68%; }
+.m37 { top: 37%; left: 72%; }
+.m38 { top: 48%; left: 35%; }
+.m39 { top: 50%; left: 32%; }
+.m40 { top: 47%; left: 40%; }
+.m41 { top: 60%; left: 33%; }
+.m42 { top: 53%; left: 28%; }
+.m43 { top: 51%; left: 25%; }
+.m44 { top: 60%; left: 28%; }
+.m45 { top: 66%; left: 25%; }
+.m46 { top: 69%; left: 51%; }
 .m47 { top: 67%; left: 47%; }
-.m48 { top: 67%; left: 55%; }
-.m49 { top: 76%; left: 46%; }
-.m50 { top: 80%; left: 50%; }
-.m51 { top: 82%; left: 53%; }
+.m48 { top: 70%; left: 60%; }
+.m49 { top: 79%; left: 66%; }
+.m50 { top: 81%; left: 47%; }
+.m51 { top: 85%; left: 53%; }
 .m52 { top: 86%; left: 56%; }
 .m53 { top: 57%; left: 58%; }
-.m54 { top: 64%; left: 62%; }
-.m55 { top: 74%; left: 65%; }
-.m56 { top: 78%; left: 63%; }
+.m54 { top: 55%; left: 70%; }
+.m55 { top: 78%; left: 70%; }
+.m56 { top: 75%; left: 68%; }
 .m57 { top: 84%; left: 60%; }
-.m58 { top: 86%; left: 64%; }
-.m59 { top: 88%; left: 50%; }
-.m60 { top: 87%; left: 44%; }
+.m58 { top: 97%; left: 60%; }
+.m59 { top: 95%; left: 48%; }
+.m60 { top: 80%; left: 28%; }
+
+.eye-btn {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.eye-btn:hover {
+    transform: scale(1.1);
+    background: #fff;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 10000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6); 
+    backdrop-filter: blur(3px);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 20% auto; 
+    padding: 25px;
+    width: 80%; 
+    max-width: 320px; 
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.close-btn {
+    color: #888;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+.legend-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 18px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.legend-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.dot-good { background: #ff2a2a; box-shadow: 0 0 4px rgba(255, 42, 42, 0.8); }
+.dot-bad { background: #000000; box-shadow: 0 0 4px rgba(0, 0, 0, 0.8); }

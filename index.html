@@ -8,6 +8,25 @@
 </head>
 <body>
 
+<button class="eye-btn" id="eyeBtn">👁️</button>
+
+<div id="infoModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <h3 class="legend-title">Notes</h3>
+        
+        <div class="legend-item">
+            <div class="legend-dot dot-good"></div>
+            <span>red - good moles</span>
+        </div>
+        
+        <div class="legend-item">
+            <div class="legend-dot dot-bad"></div>
+            <span>black - bad moles</span>
+        </div>
+    </div>
+</div>
+
 <div class="face">
     <img src="image/face.JPG" class="face-img" alt="My Face">
 
@@ -63,10 +82,10 @@
         <details class="mole m44 bad"><summary></summary><p>Left Lower Jaw - Elicit Jealousy (妨忌)</p></details>
         <details class="mole m45 bad"><summary></summary><p>Left Bottom Jaw - Suicide Hazard (自缢)</p></details>
 
-        <details class="mole m46 bad"><summary></summary><p>Above Upper Lip - Twins (双生)</p></details>
+        <details class="mole m46 good"><summary></summary><p>Above Upper Lip - Twins (双生)</p></details>
         <details class="mole m47 bad"><summary></summary><p>Left Corner of Mouth - Gossip/Arguments (口舌)</p></details>
         <details class="mole m48 bad"><summary></summary><p>Right Corner of Mouth - Petty People (小人)</p></details>
-        <details class="mole m49 good"><summary></summary><p>Below Lower Lip - Food and Salary (食俸)</p></details>
+        <details class="mole m49 good"><summary></summary><p>Below Lower Lip - fortune and prosperity(福禄)</p></details>
         <details class="mole m50 good"><summary></summary><p>Center Chin - Smart/Intelligent (聪明)</p></details>
         <details class="mole m51 good"><summary></summary><p>Lower Chin - Acquiring Wealth (得财)</p></details>
         <details class="mole m52 good"><summary></summary><p>Bottom Chin - Wealth (富)</p></details>
@@ -80,7 +99,28 @@
         <details class="mole m59 bad"><summary></summary><p>Center Bottom Chin - Harm to Husband (杀夫)</p></details>
         <details class="mole m60 bad"><summary></summary><p>Left Bottom Chin - Romantic Disaster (桃花劫)</p></details>
 
-    </div> </div>
+    </div> 
+
+<script>
+    const modal = document.getElementById("infoModal");
+    const eyeBtn = document.getElementById("eyeBtn");
+    const closeBtn = document.getElementById("closeBtn");
+
+   
+    eyeBtn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 
 </body>
 </html>
