@@ -189,6 +189,7 @@ summary::-webkit-details-marker {
 .eye-btn:hover {
     transform: scale(1.1);
     background: #fff;
+    
 }
 
 .modal {
@@ -253,3 +254,5 @@ summary::-webkit-details-marker {
 
 .dot-good { background: #ff2a2a; box-shadow: 0 0 4px rgba(255, 42, 42, 0.8); }
 .dot-bad { background: #000000; box-shadow: 0 0 4px rgba(0, 0, 0, 0.8); }
+
+
