@@ -1,130 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Facial Mole Reading</title>
-<link rel="stylesheet" href="style.css">
+<title>Physiognomy</title>
+<link rel="stylesheet" href="index.css">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon_io (5)/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon_io (5)/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
 <link rel="shortcut icon" href="image/favicon.ico">
 </head>
+
 <body>
 
-<button class="eye-btn" id="eyeBtn">👁️</button>
+<div class="container">
 
-<div id="infoModal" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" id="closeBtn">&times;</span>
-        <h3 class="legend-title">Notes</h3>
-        
-        <div class="legend-item">
-            <div class="legend-dot dot-good"></div>
-            <span>red - good moles</span>
-        </div>
-        
-        <div class="legend-item">
-            <div class="legend-dot dot-bad"></div>
-            <span>black - bad moles</span>
-        </div>
-    </div>
+<h1>Face Reading</h1>
+
+<p class="intro">
+Face reading is a traditional belief that facial features can reveal aspects of a person's character, fortune, and destiny. 
+In Chinese physiognomy, the position of moles on the face is often interpreted as signs of good or bad fortune.
+Click the button below to explore an interactive map of facial moles and their meanings.
+</p>
+
+<a href="home.html" class="start-btn">START</a>
+
 </div>
 
-<div class="face">
-    <img src="image/backgroundpicture.jpg" class="face-img" alt="My Face">
-
-    <div class="face-mask">
-        
-        <details class="mole m1 bad"><summary></summary><p>Left Outer Forehead - Harm to Mother (克母)</p></details>
-        <details class="mole m2 bad"><summary></summary><p>Left Mid Forehead - Nine Husbands (九夫)</p></details>
-        <details class="mole m3 bad"><summary></summary><p>Left Inner Forehead - Harm to Mother-in-law (损姑)</p></details>
-        <details class="mole m4 bad"><summary></summary><p>Upper Center Forehead - Harm to Parents (妨父母)</p></details>
-        <details class="mole m5 bad"><summary></summary><p>Center Forehead - Lack of Subordinates (少奴)</p></details>
-        <details class="mole m6 bad"><summary></summary><p>Right Inner Forehead - Remarriage (再嫁)</p></details>
-        <details class="mole m7 bad"><summary></summary><p>Right Mid-Upper Forehead - Death/Loss (克死)</p></details>
-        <details class="mole m8 bad"><summary></summary><p>Right Mid Forehead - Harm to Husband (妨夫)</p></details>
-        <details class="mole m9 bad"><summary></summary><p>Right Lower Forehead - Broken Family (散家)</p></details>
-        <details class="mole m10 bad"><summary></summary><p>Right Outer Forehead - Separation (分手)</p></details>
-        <details class="mole m11 bad"><summary></summary><p>Right Hairline - Promiscuity (淫荡)</p></details>
-        <details class="mole m12 bad"><summary></summary><p>Right Temple - Childbirth Risk/Loneliness (产厄/孤独)</p></details>
-
-        <details class="mole m13 good"><summary></summary><p>Above Left Brow - Great Wealth (巨富)</p></details>
-        <details class="mole m14 good"><summary></summary><p>Left Brow Inner - Wealthy (富人)</p></details>
-        <details class="mole m15 good"><summary></summary><p>Left Eyebrow - Noble Benefactors (贵人)</p></details>
-        <details class="mole m16 good"><summary></summary><p>Below Left Brow - Honor and Wealth (贵禄)</p></details>
-        <details class="mole m17 bad"><summary></summary><p>Left Eye Inner - Lustful (淫)</p></details>
-        <details class="mole m18 bad"><summary></summary><p>Under Left Eye - Harm to Children (杀子)</p></details>
-        <details class="mole m19 bad"><summary></summary><p>Under Left Eye Outer - Short Life (短命)</p></details>
-        <details class="mole m20 bad"><summary></summary><p>Left Eye Outer Edge - Mixed Fortune (多福多灾)</p></details>
-        <details class="mole m21 bad"><summary></summary><p>Left Cheekbone - Financial Loss (破财)</p></details>
-
-        <details class="mole m22 good"><summary></summary><p>Between Brows - Auspicious (吉)</p></details>
-        <details class="mole m23 good"><summary></summary><p>Upper Nose Bridge - Blessing & Fortune (福)</p></details>
-        <details class="mole m24 good"><summary></summary><p>Mid Nose Bridge - Greatly Auspicious (大吉)</p></details>
-        <details class="mole m25 bad"><summary></summary><p>Lower Nose Bridge - Water Hazard (水险)</p></details>
-        <details class="mole m26 bad"><summary></summary><p>Nose Wing - Water Hazard (水险)</p></details>
-        <details class="mole m27 bad"><summary></summary><p>Nose Tip - Knife Hazard (刀厄)</p></details>
-
-        <details class="mole m28 good"><summary></summary><p>Right Brow Inner - Good for Children (宜子)</p></details>
-        <details class="mole m29 good"><summary></summary><p>Above Right Brow - Wealth (财)</p></details>
-        <details class="mole m30 good"><summary></summary><p>Right Eyebrow - Good for Husband (宜夫)</p></details>
-        <details class="mole m31 good"><summary></summary><p>Right Eye Outer - Wealth (富)</p></details>
-        <details class="mole m32 bad"><summary></summary><p>Right Eyebrow Outer - Harm to Husband (损夫)</p></details>
-        <details class="mole m33 bad"><summary></summary><p>Below Right Eye Inner - Harm to Husband (克夫)</p></details>
-        <details class="mole m34 bad"><summary></summary><p>Under Right Eye - Mourning Husband (哭夫)</p></details>
-        <details class="mole m35 bad"><summary></summary><p>Right Eye Outer Edge - Lustful (好色)</p></details>
-        <details class="mole m36 bad"><summary></summary><p>Right Cheekbone - Tears and Sadness (流泪)</p></details>
-        <details class="mole m37 bad"><summary></summary><p>Right Cheek Outer - Harm to Husband (妨夫)</p></details>
-
-        <details class="mole m38 bad"><summary></summary><p>Left Mid Cheek - Few Children (少子)</p></details>
-        <details class="mole m39 bad"><summary></summary><p>Left Lower Cheek - Tears and Sadness (流泪)</p></details>
-        <details class="mole m40 bad"><summary></summary><p>Left Lower Cheek Outer - Water Hazard (水险)</p></details>
-        <details class="mole m41 bad"><summary></summary><p>Left Jawline - Water Hazard (水险)</p></details>
-        <details class="mole m42 bad"><summary></summary><p>Left Outer Cheek - Harm to Husband (克夫)</p></details>
-        <details class="mole m43 bad"><summary></summary><p>Left Lower Outer Cheek - Poverty (贫苦)</p></details>
-        <details class="mole m44 bad"><summary></summary><p>Left Lower Jaw - Elicit Jealousy (妨忌)</p></details>
-        <details class="mole m45 bad"><summary></summary><p>Left Bottom Jaw - Suicide Hazard (自缢)</p></details>
-
-        <details class="mole m46 good"><summary></summary><p>Above Upper Lip - Twins (双生)</p></details>
-        <details class="mole m47 bad"><summary></summary><p>Left Corner of Mouth - Gossip/Arguments (口舌)</p></details>
-        <details class="mole m48 bad"><summary></summary><p>Right Corner of Mouth - Petty People (小人)</p></details>
-        <details class="mole m49 good"><summary></summary><p>Below Lower Lip - fortune and prosperity(福禄)</p></details>
-        <details class="mole m50 good"><summary></summary><p>Center Chin - Smart/Intelligent (聪明)</p></details>
-        <details class="mole m51 good"><summary></summary><p>Lower Chin - Acquiring Wealth (得财)</p></details>
-        <details class="mole m52 good"><summary></summary><p>Bottom Chin - Wealth (富)</p></details>
-
-        <details class="mole m53 bad"><summary></summary><p>Right Mid Cheek - Lowly/Humble (贱)</p></details>
-        <details class="mole m54 bad"><summary></summary><p>Right Lower Cheek - Gossip/Arguments (口舌)</p></details>
-        <details class="mole m55 bad"><summary></summary><p>Right Outer Jaw - Violent Temper (性暴)</p></details>
-        <details class="mole m56 bad"><summary></summary><p>Right Lower Jaw - Unstable Livelihood (三餐不保)</p></details>
-        <details class="mole m57 good"><summary></summary><p>Right Chin - Prospering Husband (旺夫)</p></details>
-        <details class="mole m58 bad"><summary></summary><p>Right Bottom Jaw - Hardship (辛酸)</p></details>
-        <details class="mole m59 bad"><summary></summary><p>Center Bottom Chin - Harm to Husband (杀夫)</p></details>
-        <details class="mole m60 bad"><summary></summary><p>Left Bottom Chin - Romantic Disaster (桃花劫)</p></details>
-
-    </div> 
-
-<script>
-    const modal = document.getElementById("infoModal");
-    const eyeBtn = document.getElementById("eyeBtn");
-    const closeBtn = document.getElementById("closeBtn");
-
-   
-    eyeBtn.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    closeBtn.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
-
 </body>
+
 </html>
